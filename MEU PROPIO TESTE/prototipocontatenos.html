@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo</title>
+    <link rel="stylesheet" href="prototipo1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5c5dea0b83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <!--Imagem da logo no canto superior esquerdo do site-->
+            <a href="prototipo.html"><img src="/IMAGEM/LogoCloud.svg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <!--Botão do mobile-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="prototipo.html">HOME</a></li>
+                    <li><a href="prototiposobre.html">SOBRE</a></li>
+                    <li><a href="prototipoproduto.html">PRODUTOS</a></li>
+                    <li><a href="">CONTATE-NOS</a></li>
+                </ul>
+            </div>
+            <!--Botão Mobile-->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contate-nos</h1>
+    </section>
+
+    <!--Contate-nos-->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.5985528715264!2d-34.94212228463351!3d-8.040257882519429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab199240000001%3A0xca8aee19ccd4b76f!2sFICR%20-%20Faculdade%20Cat%C3%B3lica%20Imaculada%20Concei%C3%A7%C3%A3o%20do%20Recife!5e0!3m2!1spt-BR!2sbr!4v1670701845786!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="contate-nos">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Av. Caxangá, 3841</h5>
+                        <p>Iputinga, Recife - PE, 50670-902</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>(81)985771557</h5>
+                        <p>Segunda a Sexta, 15:00 as 19:00</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>cloudlifeprojeto@hotmail.com</h5>
+                        <p>Nos mande suas duvidas</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                
+                <form action="">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="text" placeholder="Seu email " required>
+                    <input type="text" placeholder="Seu motivo" required>
+                    <textarea rows="8" placeholder="Mensagem" required></textarea>
+                    <button type="submit" class="hero-btn azulm-btn">Enviar Mensagem</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+<!--Java para acionar menu no mobile-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+<!--Footer-->
+<section class="footer">
+    <h4>Sobre nós</h4>
+    <p class="pfooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <a href="mailto:cloudlifeprojeto@hotmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/cloudl1fe/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" ></i></a>
+        <a href="https://github.com/CarlosEduardo0906?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+    </div>
+</section>
+<!--Fim do Footer-->
+
+
+
+</body>
+</html>
